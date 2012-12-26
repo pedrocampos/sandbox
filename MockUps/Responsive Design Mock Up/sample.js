@@ -1,6 +1,7 @@
 	
 	//Global flag
 	var mobile=false;
+	 var width;
 	
 	
 	
@@ -91,7 +92,7 @@
 		
 		
 		
-		function fMenuClickHandler(oEvent){
+	/*	function fMenuClickHandler(oEvent){
 		
 		
 		var li = getTarget(oEvent);
@@ -113,10 +114,13 @@
 		
 		}  //end of fMenuClickHandler
 		
+		*/
+		
 		
 		
 		
 		function fAMenuClickHandler(oEvent){
+		
 		
 		
 		var a = getTarget(oEvent);
@@ -129,17 +133,27 @@
 					
 			        var tmp = li.childNodes[2];
 					
-						if(tmp.className == ""){
-			  
+					
+					
+						if(tmp.className == "" || tmp.className == "menuClassHide"){
+								
+								
 								tmp.className = "menuClassShow";
+
+							
+			  
+								
 						}else{
 						
 								tmp.className = "menuClassHide";
+								
+											  
 						}
 						
 						
 			 
 			 }else{
+				
 				
 					return true;
 			 
@@ -156,15 +170,16 @@
 		
 		var listLi = document.getElementsByTagName("li");
  
- var width = document.innerWidth ? document.innerWidth : ( (document.body.offsetWidth) ? document.body.offsetWidth : document.documentElement.offsetWidth ) ;
+	width = document.innerWidth ? document.innerWidth : ( (document.body.offsetWidth) ? document.body.offsetWidth : document.documentElement.offsetWidth ) ;
 
 	
  
-		if(window.innerWidth < 400){
+		if(width < 400){
 		console.log("Window has size less than 400");
 		
 		if(!mobile){
 		
+		mobile = true;
 		for (var count=0; count<listLi.length; count++){
 		
 			
@@ -176,17 +191,20 @@
 		
 		} //end of List LI for loop
 		
-		mobile =true;
+		
 		
 		
 		}// end of !mobile
 		
 				
 		
-		}else{  		// end of an if < 400
+		}else{  		// if width > 400
   
+		
   
 			if(mobile){
+  
+			mobile =false;
   
 		for (var count=0; count<listLi.length; count++){
 		
@@ -197,10 +215,10 @@
 			
 			
 			
-			var listLi = document.getElementsByTagName("li");
+			//var listLi = document.getElementsByTagName("li");
 		
 		
-			for(var count=0 ; count<listLi.length ; count++){
+		//	for(var count=0 ; count<listLi.length ; count++){
 		
 			 if(listLi[count].childNodes.length > 1){
 			 
@@ -224,9 +242,9 @@
 						
 						
 			 
-			 }
+			 }  //end of if 
 			 
-			 } //end of for listLi
+			// } //end of for listLi
 			
 			
 			
@@ -235,7 +253,7 @@
 		
 		} //end of List LI for loop
 		
-		mobile =false;
+		
 		
 		
 		} // end of if(mobile)
