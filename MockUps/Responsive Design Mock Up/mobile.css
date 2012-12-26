@@ -1,0 +1,167 @@
+
+
+body{
+
+font-size:60%;
+
+}
+
+ #container{
+    	width:300px;
+		
+   }
+   
+   #logo{
+   		float:none;
+		height:100px;
+		width:280px;
+		margin:5px auto;
+		border:1px solid white;
+		background :url('images/logo_280_100.jpg') no-repeat;
+		
+		  
+   }
+   
+   #mainNav{
+		float:none;
+		padding:3px;
+		position:static;
+		height:auto;
+		width:95%;
+		margin:3px auto;
+		font-size:1.4em;
+		
+		
+			
+	}
+	
+	
+	#mainNav ul{
+	
+	
+	font-size:0.65em;
+	float:none;
+	clear:both;
+			
+	}
+	
+	
+	#mainNav ul ul li:hover > ul{
+		
+		display:none;
+		
+	}
+	
+	#mainNav ul li:hover > ul{
+		display:none;
+		
+	}
+	
+	
+	#mainNav ul li a{
+	
+	display:block;
+				
+	}
+	
+	#mainNav ul li{
+		
+		margin:2px 0px;
+	 	padding:3px;
+		display:block;
+		
+	}
+	
+	
+	
+	#mainNav ul ul{
+		position:static;
+		font-size:1em;
+		margin-left:1em;
+		list-style-type:circle;
+		
+	}
+	
+	#mainNav ul ul li{
+	
+	list-style-type:disk;
+
+	}
+	#mainNav ul ul ul{
+		position:static;
+		margin-left:1em;
+	}
+	#mainNav ul ul ul li{
+	
+	list-style-type:circle;
+		
+	}
+	
+	
+	#content{
+   		min-height:300px;
+		background:#999999;
+   	
+   }
+   
+   #mainSection{
+ 		width:95%;
+		float:none;
+		margin:5px auto;
+		min-height:200px;
+		background:#B18E4A;
+		height:300px;
+		overflow:auto;
+    }
+   	
+	#mainSidebar{
+		width:95%;
+		float:none;
+		min-height:100px;
+		margin:2px auto;
+		background:#B18E4A;
+		border:2px solid white;
+		border-radius:5px;
+		-moz-border-radius:5px;
+		height:100px;
+		overflow:auto;
+	}
+	
+	footer{
+   		min-height:50px;
+	}
+	
+	.menuClassHide{
+	
+		display:none !important;
+	
+	}
+	.menuClassShow{
+	
+		display:block !important;
+	}
+	
+	
+	#mainSection h2{
+	
+	 font-size:1.6em;
+	 
+	}
+	
+	
+	
+	.copyright,#footerNav{
+	padding-top:10px;
+	float:none;
+	border-bottom: 2px solid white;
+	text-align:center;
+	
+	}
+   	
+	
+	
+	
+	
+	
+	
+	

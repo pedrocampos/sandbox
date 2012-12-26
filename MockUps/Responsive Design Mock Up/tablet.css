@@ -1,0 +1,62 @@
+ #container{
+    	
+		
+   }
+   
+   body{
+   
+   font-size:80%;
+   
+   }
+   
+   h2{
+   
+   font-size:1.3em;
+   
+   }
+   
+   #logo{
+   		
+		width:90px;
+		height:90px;
+		border:1px solid white;
+		background :url('images/logo_85_85.jpg') no-repeat 2.5px 2.5px;
+		  
+   }
+   
+   #mainNav{
+	 
+		
+		height:24px;
+		padding:3px;
+		left:10px;
+		top:110px;
+		
+			
+	}
+	
+	
+	#mainNav ul{
+	
+	font-size:0.8em;
+		
+	}
+	
+	#mainNav ul li{
+		
+		margin:0px 5px;
+	 	padding:3px;
+		margin-bottom:0px;
+	}
+	
+	
+	#mainSection{
+		
+		overflow:auto;
+    }
+   	
+	#mainSidebar{
+		overflow:auto;
+	}
+	
+	
